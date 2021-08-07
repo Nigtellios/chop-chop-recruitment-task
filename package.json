@@ -1,0 +1,24 @@
+{
+  "name": "chop-chop-recruitment-task",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "Jakub Kowalski",
+  "scripts": {
+    "build": "parcel build src/*",
+    "dev": "parcel src/index.html --open -p 80",
+    "start": "yarn build && yarn dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "dropdown": "^0.2.0",
+    "modal": "^1.2.0",
+    "modules": "^0.4.0",
+    "yarn": "^1.22.11"
+  }
+}
