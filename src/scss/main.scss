@@ -1,0 +1,12 @@
+// Reset & Normalize (Vendors)
+@import './vendor/normalize.scss';
+@import './vendor/reset.scss';
+
+// Import Core Modules
+@import './modules/variables.scss';
+@import './modules/typography.scss';
+
+// Import Modules Styling
+@import './modules/layout.scss';
+@import './modules/navigation.scss';
+@import './modules/footer.scss';
