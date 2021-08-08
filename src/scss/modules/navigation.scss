@@ -1,11 +1,62 @@
 .gs__header {
+  position: absolute;
+  width: 100%;
+  margin: 3.7rem 0 0 0;
+}
 
-  &__nav {
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
 
-    &__list {
-
-    }
+  &__list {
+    display: flex;
+    flex-flow: row nowrap;
   }
 
+  &__item {
+    height: 1.9375rem;
+    font-weight: $extra-bold;
+    font-family: $open;
+    text-transform: uppercase;
+    font-size: $px25;
+    margin-bottom: 0.5rem;
+    margin-left: 4.71rem;
+  }
 
+  &__item:nth-child(2n+1) {
+    margin-left: 4.2rem;
+  }
+
+  &__item:nth-child(2) {
+    margin-left: 5.3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $dark;
+  }
+
+  &__link:hover {
+    transition: $main;
+    color: $marine-sections;
+  }
+}
+
+.logo {
+  font-size: $px50;
+  font-weight: $extra-bold;
+  line-height: $px75;
+  letter-spacing: 0.02rem;
+}
+
+.logo__link {
+  text-decoration: none;
+  color: $dark;
+}
+
+.logo__link:hover {
+  transition: $main;
+  color: $marine-sections;
 }
