@@ -41,5 +41,4 @@ export function displayLightbox(lightboxName, lightboxOverlayName, lightboxClose
     // Reset overflow
     document.body.style.overflow = '';
   }
-
 }

@@ -1,0 +1,41 @@
+.dropdown {
+  position: absolute;
+  background: $dropdown-bcg;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.35);
+  text-align: center;
+  padding: 1rem;
+  margin-left: -1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.4375rem;
+
+  &__list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  &__list-item {
+    font-size: $px25;
+    line-height: 2.225rem;
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $dark;
+  }
+
+  &__link:hover {
+    transition: $main;
+    color: $marine-sections;
+  }
+
+  &--closed {
+    visibility: hidden;
+    transform: translateY(-120%);
+  }
+
+  &--opened {
+    visibility: visible;
+  }
+}
