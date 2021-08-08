@@ -1,0 +1,12 @@
+// Body
+.gs {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+// Modifiers
+.gs--mw {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
