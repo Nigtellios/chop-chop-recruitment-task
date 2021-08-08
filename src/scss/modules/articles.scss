@@ -1,0 +1,63 @@
+.article {
+  padding-top: 2.7rem;
+  padding-bottom: 4rem;
+
+  &__cta {
+    width: 100%;
+    margin-left: 2.55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__cta-btn {
+    margin-top: 1.3rem;
+    padding: 0 1.6rem 0 1.7rem;
+    border-radius: 1.6rem;
+    letter-spacing: 0rem;
+  }
+
+  &--heading {
+    font-size: $px50;
+    font-weight: $bold;
+    color: $marine-sections;
+    margin-bottom: 2.5rem;
+  }
+
+  &--heading-2 {
+    margin-bottom: 2.6rem;
+  }
+
+  &--s1 {
+    max-width: 34.375rem;
+  }
+
+  &--s1-2 {
+    margin-left: 0.85rem;
+    max-width: 34.375rem;
+  }
+
+  &--grey {
+    background: $grey;
+  }
+
+  &--para {
+    letter-spacing: -0.002rem;
+    color: $para-grey;
+  }
+
+  &--para-s2 {
+    margin-top: -0.4rem;
+    margin-left: 0.6rem;
+    margin-bottom: 1.44rem;
+    letter-spacing: 0.013rem;
+    font-weight: $light;
+  }
+
+  &--para-s2-2 {
+    margin-top: -0.05rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.013rem;
+    font-weight: $light;
+  }
+}

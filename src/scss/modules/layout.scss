@@ -37,8 +37,36 @@
   color: $marine-sections;
 }
 
-// Layout Grid
+.btn--dark {
+  color: $marine-read-more;
+  border: 4px solid $marine-read-more;
+}
 
+.btn--dark:hover {
+  color: purple;
+  border: 4px solid purple;
+}
+
+// Layout Grid
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.col-50 {
+  max-width: 50%;
+  width: 100%;
+}
+
+.col-30 {
+  max-width: 33.33%;
+  width: 100%;
+}
+
+.col-60 {
+  max-width: 66.67%;
+  width: 100%;
+}
 
 // Modifiers
 .gs--mw {
