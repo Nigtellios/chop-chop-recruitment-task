@@ -69,8 +69,14 @@
 }
 
 // Typography styles
+.heading, .para, .btn {
+  font-family: $open;
+}
 
-.gs__h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 5rem;
+.para--cta {
+  color: $white;
+  font-size: $px20;
+  line-height: $px32;
+  max-width: 240px;
+  letter-spacing: 0.06rem;
 }
