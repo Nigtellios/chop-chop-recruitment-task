@@ -25,11 +25,16 @@
         </h1>
       </div>
       <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link nav__dropdown-trigger" href="#">
+        <li class="nav__item nav__dropdown">
+          <a
+            class="nav__link nav__dropdown-trigger"
+            href="#about"
+            aria-expanded="false"
+            aria-label="Open Dropdown Menu"
+          >
             About
           </a>
-          <div class="dropdown dropdown--closed">
+          <div class="dropdown" role="menu">
             <ul class="dropdown__list">
               <li class="dropdown__list-item">
                 <a class="dropdown__link" href="#">
@@ -55,15 +60,20 @@
           </div>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="#blog">
             Trips
           </a>
         </li>
-        <li class="nav__item nav__dropdown-trigger">
-          <a class="nav__link" href="#">
+        <li class="nav__item nav__dropdown">
+          <a
+            class="nav__link nav__dropdown-trigger"
+            href="#gallery"
+            aria-expanded="false"
+            aria-label="Open Dropdown Menu"
+          >
             Gallery
           </a>
-          <div class="dropdown dropdown--closed">
+          <div class="dropdown" role="menu">
             <ul class="dropdown__list">
               <li class="dropdown__list-item">
                 <a class="dropdown__link" href="#">
@@ -89,7 +99,7 @@
           </div>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="#blog">
             Blog
           </a>
         </li>
@@ -107,7 +117,7 @@
           <p class="para para--cta">
             We spent three months exploring Icalnd
           </p>
-          <a class="btn cta__btn btn--light" href="#">
+          <a class="btn cta__btn btn--light" href="#gallery">
             CHECK IT
           </a>
         </div>
@@ -115,7 +125,7 @@
     </div>
   </main>
 
-  <section class="gs__article">
+  <section id="about" class="gs__article">
     <article class="article article__1st gs--mw">
       <h1 class="heading article--heading">
         Section title
@@ -135,7 +145,7 @@
     </article>
   </section>
 
-  <section class="gs__article article--grey">
+  <section id="blog" class="gs__article article--grey">
     <article class="article article__2nd gs--mw">
       <h1 class="heading article--heading article--heading-2">
         Another title
@@ -178,7 +188,7 @@
 
   </section>
 
-  <section class="gs__gallery gallery">
+  <section id="gallery" class="gs__gallery gallery">
     <div
       class="col-33 gallery__item"
     >
