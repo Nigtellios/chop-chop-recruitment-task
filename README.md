@@ -1,6 +1,10 @@
 # chop-chop-recruitment-task
 Recuitment task for Front-End Mid
 
+Node.JS version: 14.17.4
+Yarn version: 1.12.11
+Parcel Bundler version: 1.12.4
+
 # How to install dependencies
 Go to your terminal and: <br/><br/>
 ```yarn install```
