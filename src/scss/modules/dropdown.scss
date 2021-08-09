@@ -7,6 +7,7 @@
   margin-left: -1.5rem;
   margin-top: 0.5rem;
   border-radius: 0.4375rem;
+  visibility: hidden;
 
   &__list {
     display: flex;
@@ -30,12 +31,13 @@
     color: $marine-sections;
   }
 
-  &--closed {
-    visibility: hidden;
-    transform: translateY(-120%);
+  &--opened {
+    .dropdown {
+      visibility: visible;
+    }
   }
 
-  &--opened {
-    visibility: visible;
+  @media (max-width: $sm) {
+    transform: translate(120%);
   }
 }

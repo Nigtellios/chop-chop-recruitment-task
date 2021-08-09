@@ -8,6 +8,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: $xl) {
+      margin-left: 0;
+    }
   }
 
   &__cta-btn {
@@ -22,6 +26,23 @@
     font-weight: $bold;
     color: $marine-sections;
     margin-bottom: 2.5rem;
+
+    @media (max-width: $lg) {
+      font-size: $px32;
+    }
+  }
+
+  &__img {
+    @media (max-width: $xl) {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
   }
 
   &--heading-2 {
@@ -30,11 +51,21 @@
 
   &--s1 {
     max-width: 34.375rem;
+
+    @media (max-width: $md) {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
   }
 
   &--s1-2 {
     margin-left: 0.85rem;
     max-width: 34.375rem;
+
+    @media (max-width: $md) {
+      margin-left: 0;
+      max-width: 100%;
+    }
   }
 
   &--grey {
@@ -53,6 +84,17 @@
     margin-bottom: 1.44rem;
     letter-spacing: 0.013rem;
     font-weight: $light;
+
+    @media (max-width: $xl) {
+      margin-top: 0;
+      margin-left: 1rem;
+    }
+
+    @media (max-width: $md) {
+      margin-top: 1rem;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
   }
 
   &--para-s2-2 {
@@ -60,5 +102,10 @@
     margin-bottom: 1rem;
     letter-spacing: 0.013rem;
     font-weight: $light;
+
+    @media (max-width: $xl) {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
   }
 }

@@ -1,5 +1,5 @@
 // Modal JS Code
-export const modalTest = `Modal (Lightbox) has been successfully loaded.`;
+export const modalTest = `Modal (Lightbox) Module has been successfully loaded.`;
 
 export function displayLightbox(lightboxName, lightboxOverlayName, lightboxCloseBtnName, lightboxImageScope, galleryItemName) {
 

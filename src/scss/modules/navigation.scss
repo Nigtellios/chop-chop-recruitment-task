@@ -10,9 +10,49 @@
   justify-content: space-between;
   align-items: flex-end;
 
+  &__mobile-btn {
+    display: none;
+    font-family: $open;
+    font-size: $px24;
+    font-weight: 700;
+    border-radius: 1rem;
+    background: transparent;
+    padding: 0.3rem 2rem;
+    border: 4px solid $dark;
+
+    &:hover {
+      transition: $main;
+      border: 4px solid $marine-sections;
+      color: $marine-sections;
+    }
+
+    @media (max-width: $sm) {
+      display: block;
+    }
+  }
+
   &__list {
     display: flex;
     flex-flow: row nowrap;
+    visibility: visible;
+
+    @media (max-width: $sm) {
+      flex-flow: column nowrap;
+      visibility: hidden;
+
+      &--opened {
+        visibility: visible;
+        background: $grey;
+        transition: $main;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 2rem 0 1rem;
+        text-align: center;
+        background: $white;
+        border: 4px solid $dark;
+        border-radius: 2rem;
+      }
+    }
   }
 
   &__item {
@@ -23,14 +63,39 @@
     font-size: $px25;
     margin-bottom: 0.5rem;
     margin-left: 4.71rem;
+
+    @media (max-width: $xl) {
+      margin-left: 2rem;
+      font-size: $px16;
+    }
+
+    @media (max-width: $sm) {
+      margin-left: 0;
+    }
   }
 
   &__item:nth-child(2n+1) {
     margin-left: 4.2rem;
+
+    @media (max-width: $xl) {
+      margin-left: 2rem;
+    }
+
+    @media (max-width: $sm) {
+      margin-left: 0;
+    }
   }
 
   &__item:nth-child(2) {
     margin-left: 5.3rem;
+
+    @media (max-width: $xl) {
+      margin-left: 2rem;
+    }
+
+    @media (max-width: $sm) {
+      margin-left: 0;
+    }
   }
 
   &__link {
@@ -42,6 +107,12 @@
     transition: $main;
     color: $marine-sections;
   }
+
+  @media (max-width: $sm) {
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+  }
 }
 
 .logo {
@@ -49,6 +120,14 @@
   font-weight: $extra-bold;
   line-height: $px75;
   letter-spacing: 0.02rem;
+
+  @media (max-width: $lg) {
+    font-size: $px32;
+  }
+
+  @media (max-width: $md) {
+    font-size: $px24;
+  }
 }
 
 .logo__link {

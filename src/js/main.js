@@ -1,16 +1,13 @@
 /* Import Modular JS */
 import * as Dropdown from './modules/dropdown.js';
 import * as Lightbox from './modules/modal.js';
+import * as Navigation from './modules/navigation';
 
-// Log if Scripts Successfully Loaded
-// console.log(Dropdown.dropdownTest);
-// console.log(Lightbox.modalTest);
-
-// Open Dropdowns, for re-use -> provide proper selectors
+// Open Dropdowns, for re-use -> provide proper dropdown class
+// Remember that class names should be the same along document
 document.addEventListener('DOMContentLoaded', () => {
-  Dropdown.openDropdowns(
-    '.nav__dropdown-trigger',
-    '.dropdown'
+  Dropdown.openDropdown(
+    '.nav__dropdown'
   );
 })
 
@@ -25,4 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 });
 
-
+// Open Mobile Navigation
+document.addEventListener('DOMContentLoaded', () => {
+  Navigation.openNav(
+    '.nav__mobile-btn'
+  );
+});
