@@ -36,4 +36,8 @@
       visibility: visible;
     }
   }
+
+  @media (max-width: $sm) {
+    transform: translate(120%);
+  }
 }

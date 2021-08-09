@@ -33,6 +33,11 @@
     align-items: center;
     align-content: center;
     z-index: 100;
+
+    @media (max-width: $xl) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   }
 
   &__header {
@@ -52,6 +57,10 @@
     height: 100%;
     object-fit: contain;
     object-position: center;
+
+    @media (min-width: $xxl) {
+      max-height: 100%;
+    }
   }
 
   &__close-btn {
